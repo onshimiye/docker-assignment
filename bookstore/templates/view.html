@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+   <body>
+      <table border = 0>
+         <thead>
+            <td>Book</td>
+	    <td>Author</td>
+            <td>Quantity</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["book"]}}</td>
+               <td>{{row["author"]}}</td>
+               <td> {{ row["quantity"]}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/add">add new</a>
+   </body>
+</html>
